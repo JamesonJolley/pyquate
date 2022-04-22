@@ -1,5 +1,6 @@
 import math
 
+
 # base inherated classes
 class compute:
     """
@@ -18,6 +19,26 @@ class compute:
     def get_solution(self):
         return self.solution
 
+
+class point:
+    def __init__(self,x = 0, y = 0):
+        self.x = x
+        self.y = y
+
+    def git_x(self):
+        return self.x
+
+    def set_x(self, x = 0):
+        self.x = x
+
+    def git_y(self):
+        return self.y
+
+    def set_y(self,y = 0):
+        self.y = y
+        
+        
+        
 #Areas
 class Areas(compute):
     def __init__(self):
@@ -26,6 +47,7 @@ class Areas(compute):
         self.width = 0
         self.height = 0
         self.base = 0
+        self.oragin = 0
 
     def compute_area():
         """
@@ -33,16 +55,16 @@ class Areas(compute):
         """
         return 0 
     
-    def get_area(self):
+    def git_area(self):
         return self.area
     
-    def get_width(self):
+    def git_width(self):
         return self.width
 
-    def get_height(self):
+    def git_height(self):
         return self.height
 
-    def get_base(self):
+    def git_base(self):
         return self.base
 
     def set_area(self,area = compute_area()):
@@ -95,10 +117,10 @@ class Rhombus(Areas):
         Area = (self.large_diagonal * self.small_diagonal) / 2
         return Area
 
-    def get_large_diagonal(self):
+    def git_large_diagonal(self):
         return self.large_diagonal
 
-    def get_small_diagonal(self):
+    def git_small_diagonal(self):
         return self.small_diagonal
 
     def set_large_diagonal(self,large_diagonal=0):
@@ -134,10 +156,10 @@ class Regular_polygon(Areas):
         Area = self.perimeter / 2 * self.apothem
         return Area
 
-    def get_perimeter(self):
+    def git_perimeter(self):
         return self.perimeter
 
-    def get_apothem(self):
+    def git_apothem(self):
         return self.apothem
 
     def set_perimeter(self,perimeter=0):
