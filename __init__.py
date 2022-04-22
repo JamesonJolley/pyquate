@@ -89,6 +89,7 @@ class Rectangle(Areas):
         """
         Area = self.width * self.height
         return Area
+        
     
 
 class Triangle(Areas):
